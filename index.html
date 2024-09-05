@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Ensure the body takes up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Center the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f9ce27; /* Set the background color to blue */
+}
+
+/* Style the image */
+.spinning-image {
+    width: 200px; /* Adjust the size of the image as needed */
+    height: auto;
+    animation: spin 5s linear infinite; /* Spin animation */
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+</style>
+<body>
+    <div class="container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbeagle-dog-on-yellow-background-bgh28lk6lqi9nnp1.jpg&f=1&nofb=1&ipt=fc9e91e9574c62c661e1d76056a62f45a0f866619d82f088c07dd1f52c3609d3&ipo=imageshttps://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbeagle-dog-on-yellow-background-bgh28lk6lqi9nnp1.jpg&f=1&nofb=1&ipt=fc9e91e9574c62c661e1d76056a62f45a0f866619d82f088c07dd1f52c3609d3&ipo=images" alt="Spinning Image" class="spinning-image">
+    </div>
+</body>
+</html>
